@@ -14,6 +14,8 @@ that you want to download")
 --Note: When you finish uploading photos, reels, and posts, go to the folder in which the media 
 was saved and renamed, because when you download new items for the same username, you may lose the old ones.
 ---------------------------------------------------------------------------------------------------------------
+--Note: if you find a login error < tru to restart your device.
+---------------------------------------------------------------------------------------
 ⚠⚠ Warning: We are not responsible for any illegal or malicious use of the tool
 Hack the word
 Abdalrahman125141      
