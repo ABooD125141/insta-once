@@ -33,7 +33,6 @@ def download_posts(username):
     loader = instaloader.Instaloader()
     loader.download_profile(username, profile_pic=False, fast_update=False)
 
-    # حذف الملفات غير الضرورية بعد التنزيل
     for root, dirs, files in os.walk(username):
         for file in files:
             file_extension = os.path.splitext(file)[1]
