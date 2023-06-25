@@ -44,11 +44,10 @@ def download_posts(username):
 def download_allposts(username):
     loader = instaloader.Instaloader()
     save_directory = os.path.join(username)
-    os.makedirs(save_directory, exist_ok=True)  # إنشاء المجلد إذا لم يكن موجودًا
+    os.makedirs(save_directory, exist_ok=True) 
     loader.download_profile(username, profile_pic=False, fast_update=False)
 
 
-    # حذف الملفات غير الضرورية بعد التنزيل
     for root, dirs, files in os.walk(username):
         for file in files:
             file_extension = os.path.splitext(file)[1]
@@ -61,7 +60,6 @@ def download_reels(username):
     loader.download_profile(username, profile_pic=False, fast_update=False)
 
 
-    # حذف الملفات غير الضرورية بعد التنزيل
     for root, dirs, files in os.walk(username):
         for file in files:
             file_extension = os.path.splitext(file)[1]
@@ -73,17 +71,16 @@ def download_photos(username):
     os.path.join('reels')
     loader.download_profile(username, profile_pic=False, fast_update=False)
 
-    # حذف الملفات غير الضرورية بعد التنزيل
     for root, dirs, files in os.walk(username):
         for file in files:
             file_extension = os.path.splitext(file)[1]
             if file_extension.lower() in ['.txt', '.xz' , '.mp4']:
                 os.remove(os.path.join(root, file))
 
-# دالة الخروج من البرنامج
+
 def exit_program(signum, frame):
     print("Exiting the program...")
-    time.sleep(4)  # تأخير لمدة 4 ثوانٍ قبل الخروج
+    time.sleep(4)  
     os._exit(0)
 
 
@@ -114,13 +111,13 @@ while True:
     print(Fore.GREEN + "-----------------------------")
     print("                                                                                                        ")
 
-    # استلام اختيار المستخدم
+    
     option = input(Fore.LIGHTYELLOW_EX + "Enter the option number:")
     print("                                                                ")
-    # استخدام الاختيار المدخل من قبل المستخدم
+   
     if option == '1':
         print("                                                                                                        ")
-        # استلام اسم المستخدم من المستخدم
+       
         username = input(Fore.LIGHTGREEN_EX + "Enter the target Instagram username: ")
         print("                                                                                                        ")
         print(Fore.LIGHTYELLOW_EX + "----------------------------------")
@@ -131,7 +128,7 @@ while True:
         download_posts(username)
     elif option == '2':
         print("                                                                                                        ")
-        # استلام اسم المستخدم من المستخدم
+       
         username = input(Fore.LIGHTGREEN_EX + "Enter the target Instagram username: ")
         print("                                                                                                        ")
         print(Fore.LIGHTYELLOW_EX + "----------------------------------")
@@ -143,7 +140,6 @@ while True:
 
     elif option == '3':
         print("                                                                                                        ")
-        # استلام اسم المستخدم من المستخدم
         username = input(Fore.LIGHTGREEN_EX + "Enter the target Instagram username: ")
         print("                                                                                                        ")
         print(Fore.LIGHTYELLOW_EX + "----------------------------------")
@@ -155,7 +151,6 @@ while True:
 
     elif option == '4':
         print("                                                                                                        ")
-        # استلام اسم المستخدم من المستخدم
         username = input(Fore.LIGHTGREEN_EX + "Enter the target Instagram username: ")
         print("                                                                                                        ")
         print(Fore.LIGHTYELLOW_EX + "----------------------------------")
