@@ -98,7 +98,7 @@ V1""", Fore.LIGHTMAGENTA_EX + """
     @@                @@  
       %%@@@@@@@@@@@@%%/
       
-""" , Fore.LIGHTYELLOW_EX + "                                                                                   by ABDALRAHMAN125141")
+""" , Fore.LIGHTYELLOW_EX + "                                            by ABDALRAHMAN125141")
 
 print(Fore.BLUE + "Welcame to Insta-once© Tool" , Fore.LIGHTYELLOW_EX +"V1")
 print("                                                                                                        ")     
