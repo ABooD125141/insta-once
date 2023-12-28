@@ -2,10 +2,10 @@
 
 
 # insta-once
-Hello, you are using the latest version of the insta-once
+Hi, you are using the latest version of the insta-once
 -----------------------------------------------------------------------------------
 --With insta-once, you can Download:
-"reels
+reels
 posts
 photos
 from any Instagram account in once 
@@ -21,4 +21,4 @@ was saved and renamed, because when you download new items for the same username
 ---------------------------------------------------------------------------------------
 ⚠⚠ Warning: We are not responsible for any illegal or malicious use of the tool
 Hack the word
-Abdalrahman125141      
+ABooD125141      
